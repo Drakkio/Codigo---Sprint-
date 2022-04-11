@@ -1,0 +1,77 @@
+#include <iostream>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+using namespace std;
+
+int main(int argc, char** argv) 
+{
+
+
+	setlocale(LC_ALL, "portuguese");
+	
+	int aux=0, num_q=0, tipo=0, cobertura=0, banco=0, arquibancada=0; 
+	
+
+	
+	cout<< "Cadastar quadras\n\n";
+	
+	
+	
+	cout<< "Escolha o tipo de quadra a ser cadastrada\n\n 1 - Têns\n 2 - Saibro/Rápida\n 3 - Beach tênis \n\n";
+	cin>> aux;
+			
+		if(aux <= 0 or aux > 3)
+			{
+				do{
+				
+				
+				cout<< "ERRO, POR FAVOR SELECIONE UMA OPÇÃO VÁLIDA\n\n";
+				cin>> aux;
+				
+				}while(aux <= 0 or aux > 3);
+		
+			}
+		else
+			{
+			
+				if(aux == 1 )
+			
+					cout<< "A quadra selecionada é: Tênis\n\n";
+				else
+					{
+					
+			
+					if(aux == 2)
+						{
+							cout<<"A quadra selecionada é: Saíbro/Rápida\n\n";
+						}
+				
+					else
+						{
+							cout<<"A quadra selecionada é: Beach Tênis\n\n";
+						}
+				}
+			}
+		
+		
+			
+	
+	cout<< "Insira o número da quadra:  \n\n";
+	cin>> num_q;
+	
+	cout<< "A quadra possui cobertura?\n";
+	cout<< "(1 = SIM | 2 = NÃO)\n\n";
+	cin>>cobertura;
+	
+	cout<< "A quadra possui arquibancada?\n";
+	cout<< "(1 = SIM | 2 = NÃO)\n\n";
+	cin>>arquibancada;
+	
+	cout<< "A quadra possui banco para os jogadores sentarem?\n";
+	cout<< "(1 = SIM | 2 = NÃO)\n\n";
+	cin>>banco;
+	
+	
+	
+return 0;
+}
